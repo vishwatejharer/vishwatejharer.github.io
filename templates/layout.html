@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+
+            background-color: black;
+            position: sticky;
+            top: -20px;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 30px;
+
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: cadetblue;
+
+        }
+
+        a:hover {
+            color: brown
+        }
+
+        #s {
+            height: 600px;
+        }
+
+        #r {
+            height: 400px;
+        }
+
+        #q {
+            width: 1000px;
+            height: 400px;
+        }
+
+        .covid {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            font-size: 4em;
+            justify-content: center;
+
+            color: red;
+        }
+
+        #v {
+            font-size: 2em;
+
+        }
+
+        /* .homepara{
+            display: flex;
+            width: 50%;
+            align-self: center;
+            justify-content: center;margin: auto;
+        } */
+        #home {
+            margin: 0px;
+            padding-bottom: 205px;
+
+            background: url("https://cddep.org/wp-content/uploads/2020/04/shutterstock_1643947495.jpg");
+            background-size: cover;
+            font-size: 2em;
+            color: white;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .n {
+            margin: 100px;
+            font-size: 1.5em;
+
+        }
+
+        .i {
+            height: 350px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <b>
+                <li><a href="/">Home</a></li>
+            </b>
+
+          
+            <b>
+                <li><a href="/dashboard">Dashboard</a></li>
+            </b>
+            <b>
+                <li><a href="/prediction">Prediction</a></li>
+            </b>
+            <b>
+                <li><a href="
+                    https://sayali553.github.io/covid/">Documentation</a></li>
+            </b>
+        </ul>
+    </nav>
+
+    {% block content %}{% endblock %}
+</body>
+
+</html>

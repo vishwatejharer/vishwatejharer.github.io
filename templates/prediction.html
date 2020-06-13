@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block title %}Prediction Page{% endblock %}
+{% block content %}
+<div class="n">
+<b><p>Predicting the trend of deaths, positive cases and recoveries in the future using time series (date-wise)?</p></b>
+<img class="i" src="{{url_for('static',filename='images/p1.PNG')}}" alt="">
+<p>The graph tells the trend of Total number of Positive Cases per day from March to May.</p>
+<br><br><hr><br>
+<b><p>FORECASTING ON THE NUMBER OF POSITIVE CASES PER DAY USING AUTO ARIMA </p></b>
+<img class="i"  src="{{url_for('static',filename='images/p2.PNG')}}" alt="">
+<p>The graph gives the forecasted trend (decreasing) of the positives cases on particular day up to June 7.</p>
+<br>
+<br><hr><br>
+<img class="i" src="{{url_for('static',filename='images/p3.PNG')}}" alt="">
+<p>
+    The graph shows the forecasted  trend  of  the  number  of  recovery  cases(increasing) using Prophet. So as the patient recovery is increasing ,this is a positive prospective achieved by Italy. 
+    
+    </p>
+    <img class="i" src="{{url_for('static',filename='images/p4.PNG')}}" alt="">
+    <p>As we can see in the graph we have forecasted values from 24th May to a little beyond 10th June 
+        The graph shows  the forecasted  trend  of  the  number  of death  cases(slow increase  not  steep/slight increase) using Prophet.  
+        
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+{% endblock %}
